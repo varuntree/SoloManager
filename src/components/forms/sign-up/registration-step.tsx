@@ -1,9 +1,11 @@
+"use client"
 import { useAuthContextHook } from '@/context/use-auth-context'
 import React, { useState } from 'react'
 import { useFormContext } from 'react-hook-form'
 import TypeSelectionForm from './type-selection-from'
 import dynamic from 'next/dynamic'
 import { Spinner } from '@/components/spinner'
+import OTPForm from './otp-form'
 
 const DetailForm = dynamic(() => import('./account-details-form'), {
   ssr: false,
@@ -29,9 +31,15 @@ const RegistrationFromStep = (props: Props) => {
             )
         case 2:
           return (
-            <DetailForm/>
+            <DetailForm register={register} errors={errors}/>
           )
         case 3:
+          return (
+            <OTPForm
+              onOTP={onOTP}
+              setOTP={setonOTP}
+              />
+          )
     }
 
 
@@ -39,5 +47,5 @@ const RegistrationFromStep = (props: Props) => {
     <div>RegistrationFromStep</div>
   )
 }
-
+""
 export default RegistrationFromStep

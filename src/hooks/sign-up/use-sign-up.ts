@@ -30,6 +30,10 @@ export const useSignUpForm = ()=>{
                 password:password,
             })
 
+            await signUp.prepareEmailAddressVerification({ strategy: 'email_code' })
+
+            onNext((prev) => prev + 1)
+
         }catch(error: any){
             toast({
                 title:"Error",
