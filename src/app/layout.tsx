@@ -9,6 +9,7 @@ import {
   UserButton
 } from '@clerk/nextjs'
 import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "@/context/theme-provider";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,7 +28,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <ClerkProvider>
-        {children}
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="white"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
         <Toaster/>
       </ClerkProvider>
         </body>
