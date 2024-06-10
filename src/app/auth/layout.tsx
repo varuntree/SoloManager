@@ -36,7 +36,7 @@ const layout = async ({children}:{children:ReactNode}) => {
         sizes='100vw'
         width={0}
         height={0}
-        className='absolute shrink !w-[1600px] top-48'
+        className='absolute border-4 rounded-lg shrink !w-[1600px] top-48'
         />
       </div>
     </div>
