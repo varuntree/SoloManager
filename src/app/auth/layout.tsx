@@ -24,11 +24,11 @@ const layout = async ({children}:{children:ReactNode}) => {
       <div className='hidden lg:flex flex-1 w-full max-h-full max-w-4000px overflow-hidden relative 
       bg-cream flex-col pt-10 pl-24 gap-3'>
         <h2 className="text-gravel md:text-4xl font-bold">
-          Hi, I'm your  AI powered sales assistant, Solo Manger!
+          {"Hi, I'm your  AI powered sales assistant, Solo Manger!"}
         </h2>
         <p>
-          Solo Manager is capable handling the Complex data mangemant Without <br />
-          Usual methods
+          {"Solo Manager is capable handling the Complex data mangemant Without"} <br />
+           {"Usual methods"}
         </p>
         <Image
         src="/images/app-ui.png"

@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription } from '../ui/card'
 import { Check, CheckCircle2, Plus } from 'lucide-react'
 import { pricingCards } from '@/constants/landing-page'
 
-import SubscriptionForm from '../forms/settings/subscription-form'
+
 import Image from 'next/image'
 import Section from '../section'
 import Modal from '../modal'

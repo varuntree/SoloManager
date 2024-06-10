@@ -176,7 +176,7 @@ export const useHelpDesk = (id: string) => {
 
   useEffect(() => {
     onGetQuestions()
-  }, [])
+  })
 
   return {
     register,
@@ -230,7 +230,7 @@ export const useHelpDesk = (id: string) => {
   
     useEffect(() => {
       onGetQuestions()
-    }, [])
+    })
   
     return {
       loading,

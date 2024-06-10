@@ -22,7 +22,7 @@ export const onIntegrateDomain = async (domain: string, icon: string) => {
               plan: true,
             },
           },
-        },
+      },
       })
       const domainExists = await prisma.user.findFirst({
         where: {

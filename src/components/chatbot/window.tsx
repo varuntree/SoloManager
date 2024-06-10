@@ -180,7 +180,7 @@ export const BotWindow = forwardRef<HTMLDivElement, Props>(
           </TabsContent>
         </TabsMenu>
         <div className="flex justify-center ">
-          <p className="text-gray-400 text-xs">Powered By Solo Manager's</p>
+          <p className="text-gray-400 text-xs">{"Powered By Solo Manager's"}</p>
         </div>
       </div>
     )

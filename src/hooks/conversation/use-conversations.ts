@@ -101,15 +101,15 @@ export const useChatTime = (createdAt: Date, roomId: string) => {
   
     useEffect(() => {
       onSeenChat()
-    }, [chatRoom])
+    })
   
     useEffect(() => {
       onSetMessageRecievedDate()
-    }, [])
+    })
   
     return { messageSentAt, urgent, onSeenChat }
   }
-  
+
 
   
 export const useChatWindow = () => {
